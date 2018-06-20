@@ -1,13 +1,13 @@
 ---
 swagger: "2.0"
-x-collection-name: Eventbrite
+x-collection-name: Foursquare
 x-complete: 0
 info:
-  title: Eventbrite Get Refund Requests
-  description: Gets a refund-request for the specified refund request.
+  title: Foursquare Get Users Requests
+  description: /users/leaderboard
   version: 1.0.0
-host: www.eventbrite.com
-basePath: /%7Bdata-type%7D/
+host: api.foursquare.com
+basePath: /v2/
 schemes:
 - http
 produces:
@@ -15,17 +15,22 @@ produces:
 consumes:
 - application/json
 paths:
-  /refund_requests/{id}/:
+  /users/requests:
     get:
-      summary: Get Refund Requests
-      description: Gets a refund-request for the specified refund request.
-      operationId: getRefundRequests
-      x-api-path-slug: refund-requestsid-get
+      summary: Get Users Requests
+      description: /users/leaderboard
+      operationId: usersleaderboard
+      x-api-path-slug: usersrequests-get
+      parameters:
+      - in: query
+        name: v
+        description: All requests now accept a v=YYYYMMDD param, which indicates that
+          the client is up to date as of the specified date
       responses:
         200:
           description: OK
       tags:
-      - Refund
+      - Users
       - Requests
 x-streamrank:
   polling_total_time_average: 0

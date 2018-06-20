@@ -4,10 +4,10 @@ x-collection-name: Eventbrite
 x-complete: 1
 info:
   title: Eventbrite
-  description: the-eventbrite-api-is-the-best-way-to-integrate-and-extend-eventbrite-for-your-event-or-organising-needs-version-3-of-the-api-brings-you-faster-responses-consistent-data-types-more-endpoints-and-easier-debugging-and-testing
+  description: create-manage--promote-events--add-eventmanagement-features-to-your-site--show-the-world-what-exciting-things-are-happening-around-them-
   version: 1.0.0
-host: www.eventbriteapi.com
-basePath: /v3
+host: www.eventbrite.com
+basePath: /%7Bdata-type%7D/
 schemes:
 - http
 produces:
@@ -28,7 +28,7 @@ paths:
       - Refund
       - Requests
     post:
-      summary: Add Refund Requests
+      summary: Post Refund Requests
       description: Update a refund-request for a specific order. Each element in items
         is a refund-item
       operationId: postRefundRequests
@@ -65,7 +65,7 @@ paths:
       - Requests
   /refund_requests/:
     post:
-      summary: Add Refund Requests
+      summary: Post Refund Requests
       description: Creates a refund-request for a specific order. Each element in
         items is a refund-item
       operationId: postRefundRequests

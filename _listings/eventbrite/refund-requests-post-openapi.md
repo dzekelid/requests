@@ -3,12 +3,12 @@ swagger: "2.0"
 x-collection-name: Eventbrite
 x-complete: 0
 info:
-  title: Eventbrite Add Refund Requests
+  title: Eventbrite Post Refund Requests
   description: Creates a refund-request for a specific order. Each element in items
     is a refund-item
   version: 1.0.0
-host: www.eventbriteapi.com
-basePath: /v3
+host: www.eventbrite.com
+basePath: /%7Bdata-type%7D/
 schemes:
 - http
 produces:
@@ -29,7 +29,7 @@ paths:
       - Refund
       - Requests
     post:
-      summary: Add Refund Requests
+      summary: Post Refund Requests
       description: Update a refund-request for a specific order. Each element in items
         is a refund-item
       operationId: postRefundRequests
@@ -66,7 +66,7 @@ paths:
       - Requests
   /refund_requests/:
     post:
-      summary: Add Refund Requests
+      summary: Post Refund Requests
       description: Creates a refund-request for a specific order. Each element in
         items is a refund-item
       operationId: postRefundRequests

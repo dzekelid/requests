@@ -1,13 +1,12 @@
 ---
 swagger: "2.0"
-x-collection-name: Eventbrite
+x-collection-name: Lykke
 x-complete: 0
 info:
-  title: Eventbrite Get Refund Requests
-  description: Gets a refund-request for the specified refund request.
+  title: Lykke Get API Offchain Requests
   version: 1.0.0
-host: www.eventbrite.com
-basePath: /%7Bdata-type%7D/
+  description: Get api offchain requests.
+basePath: /
 schemes:
 - http
 produces:
@@ -15,17 +14,21 @@ produces:
 consumes:
 - application/json
 paths:
-  /refund_requests/{id}/:
+  /api/offchain/requests:
     get:
-      summary: Get Refund Requests
-      description: Gets a refund-request for the specified refund request.
-      operationId: getRefundRequests
-      x-api-path-slug: refund-requestsid-get
+      summary: Get API Offchain Requests
+      description: Get api offchain requests.
+      operationId: ApiOffchainRequestsGet
+      x-api-path-slug: apioffchainrequests-get
+      parameters:
+      - in: header
+        name: Authorization
+        description: access token
       responses:
         200:
           description: OK
       tags:
-      - Refund
+      - Offchain
       - Requests
 x-streamrank:
   polling_total_time_average: 0
