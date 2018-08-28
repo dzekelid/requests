@@ -1,10 +1,8 @@
----
 swagger: "2.0"
 x-collection-name: SendGrid
 x-complete: 1
 info:
   title: SendGrid
-  description: the-sendgrid-web-api-v3-documentation--this-is-the-entirety-of-the-documented-v3-endpoints--we-have-updated-all-the-descriptions-parameters-requests-and-responses--authentication-every-endpoint-requires-authentication-in-the-form-of-an-authorization-header-authorization-bearer-api-key
   version: 1.0.0
 host: api.sendgrid.com
 basePath: /v3
@@ -60,8 +58,10 @@ paths:
   /scopes/requests/{request_id}/approve:
     patch:
       summary: Patch Scopes Requests Request  Approve
-      description: "This endpoint allows you to approve an access attempt.\n\n**Note:**
-        Only teammate admins may approve another teammate\u2019s access request."
+      description: |-
+        This endpoint allows you to approve an access attempt.
+
+        **Note:** Only teammate admins may approve another teammate???s access request.
       operationId: scopes.requests.request_id.approve.patch
       x-api-path-slug: scopesrequestsrequest-idapprove-patch
       responses:
@@ -74,4 +74,3 @@ paths:
       - Request
       - ""
       - Approve
----

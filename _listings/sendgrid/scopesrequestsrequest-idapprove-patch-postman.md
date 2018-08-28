@@ -2,7 +2,7 @@
   "info": {
     "name": "SendGrid Patch Scopes Requests Request  Approve",
     "_postman_id": "a53bb5c5-cd89-4940-9648-ace5a7f96149",
-    "description": "This endpoint allows you to approve an access attempt.\n\n**Note:** Only teammate admins may approve another teammate’s access request.",
+    "description": "This endpoint allows you to approve an access attempt.\n\n**Note:** Only teammate admins may approve another teammate???s access request.",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/"
   },
   "item": [

@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: Lykke
 x-complete: 1
@@ -29,4 +28,39 @@ paths:
       tags:
       - Offchain
       - Requests
----
+  /api/offchain/requestTransfer:
+    post:
+      summary: Add API Offchain Requesttransfer
+      description: Add api offchain requesttransfer.
+      operationId: ApiOffchainRequestTransferPost
+      x-api-path-slug: apioffchainrequesttransfer-post
+      parameters:
+      - in: header
+        name: Authorization
+        description: access token
+      - in: body
+        name: model
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Offchain
+      - Requesttransfer
+  /api/RequestVoiceCall:
+    post:
+      summary: Add API Requestvoicecall
+      description: Add api requestvoicecall.
+      operationId: ApiRequestVoiceCallPost
+      x-api-path-slug: apirequestvoicecall-post
+      parameters:
+      - in: body
+        name: request
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Requestvoicecall

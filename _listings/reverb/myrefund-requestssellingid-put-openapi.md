@@ -3,7 +3,7 @@ swagger: "2.0"
 x-collection-name: Reverb
 x-complete: 0
 info:
-  title: reverb Put My Refund Requests Selling
+  title: Reverb Put My Refund Requests Selling
   description: Update a refund request for a sold order
   termsOfService: https://reverb.com/page/terms
   contact:

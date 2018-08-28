@@ -90,6 +90,29 @@ paths:
       - Banking
       - Accounts
       - Requests
+    delete:
+      summary: Delete an account request
+      description: Delete an account request
+      operationId: DeleteAccountRequest
+      x-api-path-slug: accountrequestsaccountrequestid-delete
+      parameters:
+      - in: path
+        name: AccountRequestId
+        description: Unique identification as assigned by the ASPSP to uniquely identify
+          the account request resource
+      - in: header
+        name: Authorization
+        description: An Authorisation Token as per https://tools
+      - in: header
+        name: x-fapi-financial-id
+        description: The unique id of the ASPSP to which the request is issued
+      responses:
+        200:
+          description: OK
+      tags:
+      - Banking
+      - Accounts
+      - Requests
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0
